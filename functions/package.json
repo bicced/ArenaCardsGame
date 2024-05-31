@@ -1,0 +1,33 @@
+{
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "serve": "firebase serve --only functions",
+    "start": "concurrently \"yarn build\" \"yarn serve\"",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@wagmi/connectors": "^5.0.6",
+    "@wagmi/core": "^2.10.4",
+    "concurrently": "^8.2.2",
+    "ethers": "^6.12.1",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.1",
+    "js-sha3": "^0.9.3",
+    "moralis": "^2.26.1",
+    "node-cache": "^5.1.2",
+    "viem": "2.x",
+    "web3": "^4.9.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^5.4.5"
+  },
+  "private": true
+}
