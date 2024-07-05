@@ -4,8 +4,8 @@ import { RAF1_CONTRACT_ADDRESS, RAF1_DECK, RAF2_CONTRACT_ADDRESS, RAF2_DECK, RAF
 import { Transaction } from '@google-cloud/firestore';
 import { Game, LeaderboardEntry, NFT, Player } from "../types";
 
-const OWNED_DECK_SIZE = 13;
-const TOTAL_DECK_SIZE = 25;
+const OWNED_DECK_SIZE = 3;
+const TOTAL_DECK_SIZE = 28;
 const WINNER_PAYOUT_AMOUNT = 190000000000000000; // 0.19 AVAX
 
 export const handleGame = async (fromAddress: `0x${string}`): Promise<{ message: string }> => {
