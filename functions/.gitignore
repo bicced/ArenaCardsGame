@@ -2,6 +2,8 @@
 lib/**/*.js
 lib/**/*.js.map
 
+yarn.lock
+
 # TypeScript v1 declaration files
 typings/
 
